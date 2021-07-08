@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" referrerpolicy="no-referrer" /> 
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="versuch.css">
+    <link rel="stylesheet" href="menu.css">
 
-    <script src="index.js" defer></script>
     <title>meteo 3</title>
 </head>
 <body>  
@@ -301,7 +301,7 @@
                     </div> 
                 </div>
             </div>
-            <!-- <div class="prevision">
+            <div class="prevision">
                 <div class="day"></div>
                 <div id="prevision-temp-icon">
                     <div class="temp-min-max">min / max</div>
@@ -317,17 +317,19 @@
                         <span class="wind-speed">vitesse du vent</span>
                     </div> 
                 </div>
-            </div> --> 
+            </div> 
         </div>
 
         <nav class="menu">
-            <i class="fas fa-times toclose-icon"></i>
-            <!-- <section class="menu-blocs">
-                meist beliebt stadt 
-            </section>
-            <section class="menu-blocs">
-                opitons  
-            </section> -->
+            <i class="fas fa-times toclose-icon"></i> 
+            <main id="menu-ctn"> 
+                <section class="menu-header">
+                    <div class="note"> Beliebter Standort</div>
+                    <div class="standort"> 
+                    </div>
+                </section>  
+                <button id="standort-verwalten">Standort verwalten</button>  
+            </main>  
         </nav>
 
     </section> 
@@ -337,7 +339,7 @@
             <h1 id="home-titel">Wetter</h1>
             <img class="x" src="ressources/jour/11d.svg" width="150" height="150" alt="">
             <label class="x" id="home-label" for="city">Geben Sie den Namen Ihrer Stadt ein, um Wetterinformationen schneller zu erhalten </label>
-            <input class="x"  type="text" id="city" placeholder="City ..." required >
+            <input class="x" type="text" id="city" placeholder="Stadt ..." required >
             <p class="requied">** Geben Sie bitte Ihre Stadt ein **</p>
             <input class="x" id="home-btn" type="button" value="OK">
         </section>
@@ -345,6 +347,12 @@
 
     
 
+    <script src="pooJS.js"></script>
+
+    <!-- <script type="module" src="pooJSTest.js"></script> -->
+    <!-- <script src="appStorage.js"></script> -->
+    <!-- <script  src="index.js" ></script> -->
+     <!-- car c'est lui que recevra les fichiers importés -->
     <!-- <script src="versuch.js"></script> -->
     
 </body>
